@@ -5,12 +5,6 @@
 <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=OpenCV&logoColor=white"> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white">
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;logo=Docker&logoColor=white">
 
----
-## Members👨‍💻
-
-|        강은비       |  김철현  |         박성현         |         임서연      |     정현석      |
-| :-----------------: | :---: | :----------------------: | :--------------------: | :------------: |
-|    DB, Modeling     | DB, BE| PM, DB, EB, Modeling |  FE, UI/UX, Modeling | FE, UI/UX, BE |
 
 ---
 # Introduction🎮
@@ -33,9 +27,54 @@
 
 <a href="https://www.lolrecs.com" style="color: green; font-weight: bold">LOLRecs</a>
 
+---
+# Feature
+1. 전적검색
+<p align = "center">
+<img src = "https://github.com/boostcampaitech5/level3_recsys_finalproject-recsys-05/assets/46915260/a627e27a-7f7d-4827-a986-17a28786f15a">
+</p>
+
+
+2. 실시간 밴픽 추천
+밴픽창 화면 인식을 통해 유저에게 가장 적합한 챔피언을 추천해드립니다
+<p align = "center">
+<img src = "https://github.com/boostcampaitech5/level3_recsys_finalproject-recsys-05/assets/46915260/571ec96a-faa8-4347-a94c-31fb118eb2fb">
+</p>
+
+3. 아이템 추천
+유저, 상대방의 챔피언 및 포지션에 가장 적합한 아이템을 추천해드립니다
+<p align = "center">
+<img src = "https://github.com/boostcampaitech5/level3_recsys_finalproject-recsys-05/assets/46915260/6f8406c3-cb79-49ad-9d27-692d0989b574">
+</p>
+
+---
+# MODEL
+
+1. 챔피언 인식 모델
+- 화면인식기를 통해 현재 게임 창 이미지를 캡처하고, 20명의 챔피언 이미지를 잘라내어 분류 과정을 거쳐, 최종적으로 어떤 챔피언이 밴픽되었는지 인식하는 모델입니다. 
+- 이미지 분류 모델로는 잘 알려진 CNN을 사용하였고, 서버 통신간 속도 저하를 최대한 막기 위해 층을 적게 쌓아 용량을 줄였습니다. 입력 데이터 이미지가 이미 정해진 기존 프로필 챔피언 이미지이기 때문에 가능했습니다.
+- 훈련 데이터를 만들기 위해 imgaug 라이브러리를 이용하여, 기존 챔피언 프로필 이미지에 다양한 변형을 가하여 데이터를 증가시켰습니다. 웹페이지 이용자가 화면 인식 기능을 사용할 때 다른 창이나 마우스 기호 등 방해 받는 경우도 고려해 일부 마스킹 처리한 이미지도 추가하였습니다.
+
+
+2. 챔피언 추천 모델
+<img src="https://github.com/boostcampaitech5/level3_recsys_finalproject-recsys-05/assets/46915260/f8c024ed-79df-46c5-b2b2-009068fe8984">
+- 밴픽은 플레이어들이 순차적으로 챔피언을 선택하는 과정으로, 챔피언을 추천하기 위해선 이전 플레이어가 선택한 챔피언이 다음 플레이어의 선택에 영향을 준다는 점과 선택된 챔피언들 간의 관계를 모두 고려해야합니다. 
+- Transformer의 경우 self-attention을 활용하여 입력 sequence를 한번에 처리하기 때문에 실시간 밴픽 추천에 적합합니다.
+   
+
+3. 아이템 추천 모델
+- 사용자의 챔피언, 예상되는 상대 챔피언 그리고 포지션을 고려하여 아이템을 추천해주었습니다.
+- 라이엇 Match v5 API로부터 수집한 raw 데이터를 (사용자 챔피언, 상대 챔피언, 사용자 챔피언이 사용한 아이템, 승리여부) 요소들로 구성된 데이터로 재가공하였습니다.
+- 챔피언이 사용한 아이템들에 대해서 등장 횟수, 승률 등을 고려하여 통계기반으로 추천을 해주었습니다.
+
+---
 # Architecture
 
 ![Architecture](./assets/ARCHI.png)
 
-# Feature
-<img src = https://github.com/boostcampaitech5/level3_recsys_finalproject-recsys-05/assets/46915260/e1c69427-4566-41e3-b783-75d589701cf5>
+---
+## Members👨‍💻
+
+|        강은비       |  김철현  |         박성현         |         임서연      |     정현석      |
+| :-----------------: | :---: | :----------------------: | :--------------------: | :------------: |
+|    DB, Modeling     | DB, BE| PM, DB, EB, Modeling |  FE, UI/UX, Modeling | FE, UI/UX, BE |
