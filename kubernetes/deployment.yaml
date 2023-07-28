@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lolrecs-backend
+spec:
+  selector:
+    matchLabels:
+      app: lolrecs-backend
+  template:
+    metadata:
+      labels:
+        app: lolrecs-backend
+    spec:
+      containers:
+      - name: lolrecs-backend-container
+        image: asia-northeast3-docker.pkg.dev/lolrecs-project/lolrecs-backend-docker-repo/lolrecs-backend-docker-image:{GITHUB_SHA}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
