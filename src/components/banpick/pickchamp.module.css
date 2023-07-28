@@ -1,0 +1,123 @@
+.main {
+  font-family: 'Spoqa Han Sans Neo';
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.h1 {
+  margin: 20px auto;
+  color: #E2DCC8;
+  font-size: 30px;
+}
+
+.h1Desc {
+  color: #E2DCC8;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+
+.pickAlly {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  height: 98px;
+  background: linear-gradient(to right, #aba590 25%, #e2dcc852);
+  border-radius: 4px;
+}
+
+.pickEnemy {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  height: 98px;
+  background: linear-gradient(to left, #4e4a4a 30%, #4e4a4a5d);
+  border-radius: 4px;
+}
+
+
+.allytext {
+  float: right;
+  margin-right: 20px;
+  font-size: 20px;
+  color: #F1F1F1;
+}
+
+.enemytext {
+  float: left;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #F1F1F1;
+}
+
+
+
+@media (max-width: 870px) {
+
+  .h1 {
+    font-size: 27px;
+  }
+
+  .pickAlly {
+    margin-bottom: 10px;
+    padding: auto 0;
+    height: 90px;
+  }
+  
+  .pickEnemy {
+    margin-bottom: 10px;
+    padding: auto 0;
+    height: 90px;
+  }
+
+  .allytext {
+    margin-right: 12px;
+    font-size: 18px;
+  }
+  
+  .enemytext {
+    margin-left: 12px;
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 585px) {
+
+  .h1 {
+    font-size: 24px;
+  }
+
+  .h1Desc {
+    font-size: 13px;
+  }
+
+  .pickAlly {
+    margin-bottom: 8px;
+    padding: 6px 0;
+    height: 58px;
+  }
+  
+  .pickEnemy {
+    margin-bottom: 8px;
+    padding: 6px 0;
+    height: 58px;
+  }
+
+  .allytext {
+    margin-right: 8px;
+    font-size: 12px;
+  }
+  
+  .enemytext {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+
+}

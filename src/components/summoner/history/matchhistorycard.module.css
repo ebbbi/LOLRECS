@@ -1,0 +1,112 @@
+.matchContainer {
+  width: 835px;
+  display: flex;
+  flex-direction: column;
+  border-collapse: separate;
+  border-radius: 8px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Spoqa Han Sans Neo';
+}
+
+.matchContainer h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.none {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto;
+  color: #E2DCC8;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: oblique;
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 30px 18px;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: 'Spoqa Han Sans Neo';
+}
+
+.none:hover {
+  cursor: no-drop;
+}
+
+.moreMatchesContainer:hover {
+  cursor: pointer;
+}
+
+.noMatchContainer {
+  margin: 60px auto 40px;
+  animation: fadeIn ease 1.5s;
+}
+
+.noMatches {
+  width: 100%;
+  padding: 15px 0px;
+  border-radius: 8px;
+  color: #E2DCC8;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.failedMatchContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.failedMatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sad {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.retry {
+  color: #e1e1e1;
+  font-size: 14px;
+  margin: 10px 0px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: #9a83a8;
+}
+
+.retry:hover {
+  cursor: pointer;
+  outline: none;
+  background-color: #867492;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@media (max-width: 585px) {
+
+  
+
+}

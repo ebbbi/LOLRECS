@@ -1,0 +1,25 @@
+.moreMatchesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #E2DCC8;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  animation: fadeIn ease 1.5s;
+  font-family: 'Spoqa Han Sans Neo';
+}
+
+.moreMatchesContainer:hover {
+  cursor: pointer;
+}
+
+.downarrow {
+  margin: 2px 5px;
+  font-size: 14px;
+}

@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lolrecs-frontend
+spec:
+  selector:
+    matchLabels:
+      app: lolrecs-frontend
+  template:
+    metadata:
+      labels:
+        app: lolrecs-frontend
+    spec:
+      containers:
+      - name: lolrecs-frontend-container
+        image: asia-northeast3-docker.pkg.dev/lolrecs-project/lolrecs-frontend-docker-repo/lolrecs-frontend-docker-image:{GITHUB_SHA}
+        ports:
+        - containerPort: 3000

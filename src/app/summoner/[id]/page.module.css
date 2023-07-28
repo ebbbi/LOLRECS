@@ -1,0 +1,53 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Spoqa Han Sans Neo';
+}
+
+.summonerPageContainer {
+  margin: 25px auto;
+}
+
+.notFound {
+  height: 60px;
+  width: 300px;
+  margin: 250px auto 180px;
+  border-radius: 5px;
+  color: #E2DCC8;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.noMatchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 140px 0 60px;
+}
+
+.noMatch {
+  color: #e2dcc8c7;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+@media (max-width: 870px) {
+
+  .summonerPageContainer {
+    margin-top: 80px;
+    width: 90%;
+  }
+  
+}
+
+@media (max-width: 585px) {
+
+  .notFound {
+    font-size: 14px;
+  }
+
+}

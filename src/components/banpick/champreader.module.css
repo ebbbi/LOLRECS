@@ -1,0 +1,203 @@
+.buttonArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+
+.picCapButton {
+  width: 160px;
+  margin: 50px 15px;
+  padding: 10px 1px;
+  background-color: #E2DCC8;
+  border-color: transparent;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #0f3d3e;
+  cursor: pointer;
+  font-family: 'Spoqa Han Sans Neo';
+}
+
+.picCapButton:active {
+  transform: translate( 2px, 2px );
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.stopSharing {
+  background-color: #c03939e1;
+  color: #f1f1f1;
+  font-weight: 500;
+}
+
+.startSharing {
+  background-color: #E2DCC8;
+}
+
+
+.toolTip {
+  position: relative;
+  z-index: 999;
+}
+
+.tooltipButton {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 800;
+  color: #E2DCC8;
+  opacity: 0.6;
+}
+
+.tooltipArticle {
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  width: 230px;
+  background-color: #e2dcc8e0;
+  padding: 16px 20px;
+  border-radius: 8px;
+  word-break: break-all;
+}
+
+.tooltipArticle p {
+  color: #100F0F;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.tolltipSpecial {
+  margin-top: 15px;
+  color: #aa1414;
+  text-align: left;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.tooltipArticle-enter {
+  opacity: 0;
+}
+
+.tooltipArticle-enter-active {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.tooltipArticle-exit {
+  opacity: 1;
+}
+
+.tooltipArticle-exit-active {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.tooltipArticleNoPC {
+  display: None;
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  width: 230px;
+  background-color: #e2dcc8e0;
+  padding: 16px 20px;
+  border-radius: 8px;
+  word-break: break-all;
+}
+
+.tooltipArticleNoPC p {
+  color: #100F0F;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.tooltipArticleNoPC-enter {
+  opacity: 0;
+}
+
+.tooltipArticleNoPC-enter-active {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.tooltipArticleNoPC-exit {
+  opacity: 1;
+}
+
+.tooltipArticleNoPC-exit-active {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+
+@media (max-width: 870px) {
+
+  .buttonArea {
+    flex-direction: column;
+  }
+
+  .picCapButton {
+    display: none;
+  }
+
+  .tooltipArticle {
+    display: none;
+  }
+
+  .tooltipArticleNoPC {
+    display: block;
+    left: -160%;
+    top: 100%;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    opacity: 1;
+  }
+
+
+}
+
+@media (max-width: 585px) {
+
+  .buttonArea {
+    flex-direction: column;
+  }
+
+  .picCapButton {
+    display: none;
+  }
+
+  .tooltipArticle {
+    display: none;
+  }
+
+  .tooltipArticleNoPC {
+    display: block;
+    left: -160%;
+    top: 100%;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 10px;
+    opacity: 1;
+  }
+
+}

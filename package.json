@@ -1,0 +1,28 @@
+{
+  "name": "lolrecs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.10.5",
+    "next": "13.4.10",
+    "next-images": "^1.8.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-select": "^5.7.4",
+    "react-spinkit": "^3.0.0",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.0.1",
+    "file-loader": "^6.2.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

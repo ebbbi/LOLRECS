@@ -1,0 +1,122 @@
+.form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.input {
+  padding: 2% 3%;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  z-index: 100;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Spoqa Han Sans Neo";
+  text-align: left;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: #100f0f;
+  font-weight: 400;
+  font-size: 1rem;
+  z-index: 100;
+  opacity: 0.5;
+}
+
+.navbarinput {
+  padding: 2% 3.2%;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #f1f1f152;
+  border-radius: 4px;
+  z-index: 100;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Spoqa Han Sans Neo";
+  text-align: left;
+  color: #f1f1f1;
+}
+
+.navbarinput:focus {
+  outline: none;
+}
+
+.navbarinput::placeholder {
+  color: #f1f1f1;
+  font-weight: 400;
+  font-size: 1rem;
+  z-index: 100;
+  opacity: 0.5;
+}
+
+.logo {
+  position: absolute;
+  color: #f1f1f1;
+  width: 20px;
+  right: 10px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+
+@media (max-width: 870px) {
+
+  .form {
+    width: 130%;
+    height: 100%;
+  }
+  
+  .input {
+    padding: 1.8% 3%;
+    font-size: 16px;
+    font-weight: 500;
+    width: 70%;
+  }
+  
+  .navbarinput {
+    padding: 1.8% 3%;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .logo {
+    height: 16px;
+  }
+
+}
+
+
+@media (max-width: 585px) {
+
+  .input {
+    padding: 2.5% 4%;
+    font-size: 14px;
+  }
+
+  .input::placeholder {
+    font-size: 14px;
+  }
+
+  .navbarinput {
+    padding: 2.5% 4%;
+    font-size: 14px;
+  }
+
+  .navbarinput::placeholder {
+    font-size: 14px;
+  }
+
+}

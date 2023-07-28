@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  animation: fadeIn ease 1.5s;
+  font-family: 'Spoqa Han Sans Neo';
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.summonerCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.profileIcon {
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(145deg, #b4a56e, #e9e5d8);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.summonerLevel {
+  justify-content: center;
+  bottom: 14.5%;
+  font-size: 18px;
+  font-weight: 400;
+  color: #E2DCC8;
+}
+
+.summonerName {
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 30px 0 9px;
+  color: #E2DCC8;
+}
+
+
+@media (max-width: 870px) {
+
+  .summonerCardContainer {
+    margin-bottom: 14px;
+  }
+
+  .profileIcon {
+    width: 110px;
+    height: 110px;
+  }
+
+  .summonerName {
+    font-size: 25px;
+  }
+
+  .summonerLevel {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 585px) {
+
+  .profileIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+}

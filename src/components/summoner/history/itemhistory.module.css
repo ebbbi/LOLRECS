@@ -1,0 +1,43 @@
+.itemRow1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.itemRow1 img {
+  width: 30px;
+  height: 30px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  border-radius: 3px;
+}
+
+.itemRow2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.itemRow2 img {
+  width: 30px;
+  height: 30px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  border-radius: 3px;
+}
+
+
+
+@media (max-width: 870px) {
+
+  .itemRow1 img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .itemRow2 img {
+    width: 24px;
+    height: 24px;
+  }
+
+}
+
+@media (max-width: 585px) {}

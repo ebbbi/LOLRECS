@@ -1,0 +1,97 @@
+.box {
+  margin: 0 auto;
+  text-align: center;
+  height: 85px;
+  width: 85px;
+}
+
+/* .item2Box {
+  float: left;
+  margin-left: 2%;
+  height: 70px;
+  width: 70px;
+}
+
+.item3Box {
+  float: right;
+  margin-right: 2%;
+  height: 70px;
+  width: 70px;
+}
+
+.item4Box {
+  float: right;
+  margin-right: 2%;
+  height: 70px;
+  width: 70px;
+} */
+
+.empty {
+  margin: 24px auto;
+  border-radius: 45px;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+}
+
+.profCircle {
+  margin: 25px auto 18px;
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 45px;
+  overflow: hidden;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+  transform: scale(1.13);
+}
+
+.select {
+  color: #f1f1f1;
+  position: relative;
+  top: 5px;
+  width: 140px;
+  opacity: 1;
+}
+
+.champkorName {
+  color: #0f3d3e;
+  font-weight: 600;
+  font-size: 18px;
+  width: 85px;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.champengName {
+  margin-top: 3px;
+  color: black;
+  font-weight: 300;
+  font-size: 13px;
+  width: 85px;
+  text-align: center;
+  word-break: break-all;
+}
+
+
+@media (max-width: 870px) {}
+
+@media (max-width: 585px) {
+
+  .profCircle {
+    margin: 22px auto 14px;
+  }
+
+  .champkorName {
+    font-size: 16px;
+  }
+  
+  .champengName {
+    font-size: 12px;
+  }
+
+}

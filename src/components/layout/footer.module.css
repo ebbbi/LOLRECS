@@ -1,0 +1,46 @@
+.footerContainer {
+  bottom: 0;
+  height: 60px;
+  margin: 40px 0;
+  color: #f1f1f1;
+  font-weight: 300;
+  font-size: 0.56rem;
+  line-height: 15px;
+  opacity: 0.6;
+  font-family: "Spoqa Han Sans Neo";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  width: 605px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.provider {
+  margin-right: 10px;
+}
+
+.company {
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .footerContainer {
+    height: 100px;
+  }
+  .footer {
+    width: 80%;
+  }
+}

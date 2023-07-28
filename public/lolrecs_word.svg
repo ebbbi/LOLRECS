@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 549.3 125.7" enable-background="new 0 0 549.3 125.7" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<polygon fill="#E2DCC8" stroke="#E2DCC8" stroke-miterlimit="10" points="126.1,27.9 118.6,40 123.9,62.9 101,57.6 88.6,65.2 
+				101,72.6 123.9,67.3 118.6,90.2 126.1,102.6 133.5,90.2 128.3,67.3 151.2,72.6 163.2,65 151.2,57.6 128.3,62.9 133.5,40 			"/>
+			<g>
+				<g>
+					
+						<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="126" y1="27.6" x2="118.6" y2="40"/>
+					
+						<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="123.9" y1="62.9" x2="118.6" y2="40"/>
+					
+						<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="126" y1="27.6" x2="133.5" y2="40"/>
+					
+						<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="128.3" y1="62.9" x2="133.5" y2="40"/>
+				</g>
+				<g>
+					<g>
+						
+							<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="163.6" y1="65.1" x2="151.2" y2="57.6"/>
+						
+							<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="128.3" y1="62.9" x2="151.2" y2="57.6"/>
+						
+							<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="163.6" y1="65.1" x2="151.2" y2="72.6"/>
+						
+							<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="128.3" y1="67.3" x2="151.2" y2="72.6"/>
+					</g>
+				</g>
+				<g>
+					
+						<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="126.1" y1="102.6" x2="133.5" y2="90.2"/>
+					
+						<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="128.3" y1="67.3" x2="133.5" y2="90.2"/>
+					
+						<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="126.1" y1="102.6" x2="118.6" y2="90.2"/>
+					
+						<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="123.9" y1="67.3" x2="118.6" y2="90.2"/>
+				</g>
+				<g>
+					<g>
+						
+							<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="88.6" y1="65.2" x2="101" y2="72.6"/>
+						
+							<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="123.9" y1="67.3" x2="101" y2="72.6"/>
+						
+							<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="88.6" y1="65.2" x2="101" y2="57.6"/>
+						
+							<line fill="#FFFFFF" stroke="#E2DCC8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="123.9" y1="62.9" x2="101" y2="57.6"/>
+					</g>
+				</g>
+			</g>
+		</g>
+		<path fill="#E2DCC8" d="M126.1,48c-9.5,0-17.1,7.7-17.1,17.1c0,9.5,7.7,17.1,17.1,17.1c9.5,0,17.1-7.7,17.1-17.1
+			C143.2,55.7,135.5,48,126.1,48z M126.2,77.4c-6.8,0-12.3-5.5-12.3-12.3c0-6.8,5.5-12.3,12.3-12.3c6.8,0,12.3,5.5,12.3,12.3
+			C138.4,71.9,132.9,77.4,126.2,77.4z"/>
+	</g>
+	<g>
+		<polygon fill="#E2DCC8" points="85.8,87.4 82,81.3 55.3,81.3 55.3,38.8 50.6,31.3 36.6,31.3 36.6,90.4 41.9,98.9 85.8,98.9 		"/>
+	</g>
+	<g>
+		<polygon fill="#E2DCC8" points="225.1,87.4 221.3,81.3 194.6,81.3 194.6,38.8 189.8,31.3 175.9,31.3 175.9,90.4 181.2,98.9 
+			225.1,98.9 		"/>
+	</g>
+	<g>
+		<path fill="#E2DCC8" d="M297.1,62.1V41.6l-6.2-9.8c-1.4-0.3-3.1-0.4-5.1-0.4h-49.7v67.6h18.7V40h23.6v21.4h-18.4v6.1l20.6,31.4
+			h19.5l-20.6-30.6c6.2,0,10.2-0.2,12.2-0.6C295.3,66.8,297.1,65,297.1,62.1z"/>
+		<polygon fill="#E2DCC8" points="330.4,71.6 358.6,71.6 358.6,56.7 330.4,56.5 330.4,43.4 363.1,43.6 363.1,38.5 358.6,31.3 
+			311.7,31.3 311.7,92.6 315.7,98.9 363.6,98.9 363.6,86.4 330.4,86.4 		"/>
+		<path fill="#E2DCC8" d="M426.6,31.3h-39c-7.4,0-11.1,2.1-11.1,6.2v50.2l6.8,10.9c1.3,0.2,2.7,0.3,4.3,0.3h39
+			c7.6,0,11.4-2.1,11.4-6.2V76h-18.6v10.4L395.1,86V42.3h24.2v11H438V42l-6.5-10.3C430.1,31.4,428.5,31.3,426.6,31.3z"/>
+		<path fill="#E2DCC8" d="M512.7,52.6V41.3l-6-9.5c-1.5-0.3-3.3-0.5-5.4-0.5h-37.7c-7.5,0-11.3,2.1-11.3,6.2v15c0,2.2,1.4,4,4.1,5.4
+			L494,77.1v11.2L471.1,88V76.6h-18.7v11.3l6.7,10.7c1.3,0.2,2.9,0.3,4.6,0.3h37.7c7.6,0,11.4-2.1,11.4-6.2V76.6
+			c0-2.3-1.4-4.1-4.1-5.5L471.1,52V41.5H494v11.1H512.7z"/>
+	</g>
+</g>
+</svg>

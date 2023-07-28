@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: lolrecs-frontend
+spec:
+  selector:
+    app: lolrecs-frontend  # Label selector to match the pods belonging to the service
+  ports:
+    - protocol: TCP
+      port: 80  # Port on which the service is exposed on the ClusterIP
+      targetPort: 3000  # Port on which your FastAPI app listens in the pods
+  type: LoadBalancer  # Exposes the service outside the cluster for GKE

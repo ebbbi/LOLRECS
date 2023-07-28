@@ -1,0 +1,184 @@
+.main {
+  font-family: 'Spoqa Han Sans Neo';
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  width: 470px;
+}
+
+.categoryBig {
+  display: flex;
+  margin: 14px auto;
+  flex-direction: column;
+  text-align: center;
+  color: #E2DCC8;
+  font-size: 18px;
+}
+
+.categoryMiddle {
+  margin: 22px auto;
+  justify-content: center;
+  width: 135px;
+  height: 210px;
+  border-radius: 4px;
+  background-color: #E2DCC8;
+}
+
+.categoryMiddleEnemy {
+  margin: 22px auto;
+  justify-content: center;
+  width: 135px;
+  height: 210px;
+  border-radius: 4px;
+  background-color: #807676;
+}
+
+.fiveMenu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #F1F1F1;
+  margin-top: 14px;
+}
+
+.posiItem {
+  display: flex;
+  align-items: center;
+  margin: 2px 10px;
+}
+
+.inactiveMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-color: transparent;
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Spoqa Han Sans Neo';
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.posiButton:hover {
+  opacity: 1;
+}
+
+.activeMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-color: transparent;
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 6px;
+  font-family: 'Spoqa Han Sans Neo';
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.posiIcon {
+  height: 25px;
+  width: 25px;
+  margin-right: 6px;
+}
+
+
+.buttonArea {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.recButton {
+  width: 135px;
+  margin: 20px auto;
+  padding: 10px 1px;
+  background-color: #E2DCC8;
+  border-color: transparent;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #0f3d3e;
+  cursor: pointer;
+  font-family: 'Spoqa Han Sans Neo';
+}
+
+.recButton:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.body {
+  overflow: hidden;
+  margin: 30px 0;
+}
+
+.section {
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px auto 90px;
+}
+
+
+
+@media (max-width: 870px) {
+
+  .section {
+    margin: 30px auto 65px;
+  }
+
+}
+
+@media (max-width: 585px) {
+
+  .category {
+    width: 95%;
+    margin-bottom: 25px;
+  }
+
+  .categoryBig {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .fiveMenu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 14px;
+  }
+
+  .categoryMiddle {
+    width: 130px;
+    height: 195px;
+  }
+  
+  .categoryMiddleEnemy {
+    width: 130px;
+    height: 195px;
+  }
+
+  .section {
+    margin: 0 auto 60px;
+  }
+  
+}

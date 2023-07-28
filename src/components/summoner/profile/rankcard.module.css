@@ -1,0 +1,163 @@
+.singleCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 10px;
+  font-size: 16px;
+  animation: fadeIn ease 1.5s;
+  font-family: 'Spoqa Han Sans Neo';
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.emblemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+
+.emblemBack {
+  width: 65px;
+  height: 65px;
+  padding: 14px 11px;
+  border-radius: 50%;
+  background-color: #e2dcc8;
+  opacity: 0.8;
+}
+
+.emblemImage {
+  width: 43px;
+  height: 43px;
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.queue {
+  color: #E2DCC8;
+  margin-bottom: 4px;
+}
+
+.rank {
+  color: #f1f1f1;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.points {
+  color: #E2DCC8;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.ratio {
+  outline: none;
+  border: none;
+  color: #E2DCC8;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.record {
+  color: #f1f1f1;
+}
+
+.win {
+  color: #3ba051;
+  margin: 0px 6px;
+}
+
+.loss {
+  color: #ca5252;
+  margin-left: 6px;
+}
+
+
+
+@media (max-width: 870px) {
+
+  .rank {
+    font-size: 24px;
+  }
+
+  .queue {
+    font-size: 15px;
+  }
+
+  .points {
+    font-size: 15px;
+  }
+
+  .ratio {
+    font-size: 15px;
+  }
+
+  .emblemContainer {
+    margin-left: 0;
+  }
+
+  .emblemBack {
+    width: 55px;
+    height: 55px;
+  }
+
+  .emblemImage {
+    width: 33px;
+    height: 33px;
+    transform: scale(1.35);
+  }
+
+
+}
+
+
+@media (max-width: 585px) {
+
+  .singleCardContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rank {
+    font-size: 18px;
+  }
+
+  .queue {
+    font-size: 12px;
+  }
+
+  .points {
+    font-size: 12px;
+  }
+
+  .ratio {
+    font-size: 12px;
+  }
+
+  .emblemContainer {
+    margin-left: 0;
+  }
+
+  .emblemBack {
+    width: 50px;
+    height: 50px;
+    margin: 14px 30px;
+  }
+
+  .emblemImage {
+    width: 28px;
+    height: 28px;
+    transform: scale(1.35);
+  }
+
+}

@@ -1,0 +1,64 @@
+.main {
+  font-family: 'Spoqa Han Sans Neo';
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.h1 {
+  margin: 20px auto;
+  color: #E2DCC8;
+  font-size: 30px;
+}
+
+.h1Desc {
+  color: #E2DCC8;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.parent {
+  display: flex;
+  margin: 10px auto;
+}
+
+
+
+@media (max-width: 870px) {
+
+  .h1 {
+    font-size: 27px;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 8px 5px;
+  }
+
+}
+
+@media (max-width: 585px) {
+
+  .h1 {
+    font-size: 24px;
+  }
+
+  .h1Desc {
+    font-size: 13px;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px 5px;
+  }
+
+}
