@@ -1,6 +1,6 @@
 ![background](./assets/background.png)
 
-<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&amp;logo=Next.js&amp;logoColor=white">
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&flat-square&amp;logo=Next.js&amp;logoColor=white">
 <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=FastAPI&logoColor=white"> <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&amp;logo=MongoDB&logoColor=white">
 <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=OpenCV&logoColor=white"> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white">
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;logo=Docker&logoColor=white">
@@ -22,7 +22,10 @@
 - Deep Learning 모델을 이용해 실시간 상황과 유저에게 맞춤화되어있는 챔피언과 아이템을 추천해드립니다.
 - 응용 프로그램 설치 없이 모든 기능을 이용할 수 있습니다.
 
-매일 하고싶은 챔피언과, 조합에 맞지 않는 챔피언만 하다보면 티어는 제자리에 머물게 되어있기 마련입니다. 실시간으로 밴이 된 챔피언과 아군, 적군이 픽한 챔피언을 토대로 추천받은 챔피언과 함께라면 당신의 티어는 수직상승할 것 입니다. 
+</br>
+매일 하고싶은 챔피언과, 조합에 맞지 않는 챔피언만 하다보면 티어는 제자리에 머물게 되어있기 마련입니다. 
+
+실시간으로 밴이 된 챔피언과 아군, 적군이 픽한 챔피언을 토대로 추천받은 챔피언과 함께라면 당신의 티어는 수직상승할 것 입니다. 
 
 **지금 바로 함께할 챔피언을 찾아보세요!**
 
@@ -33,7 +36,7 @@
 
 1. 전적검색
 <p align = "center">
-<img src = "https://github.com/boostcampaitech5/level3_recsys_finalproject-recsys-05/assets/46915260/a627e27a-7f7d-4827-a986-17a28786f15a">
+<img src = "./assets/match_history.gif" width="700" height="350">
 </p>
 
 
@@ -41,7 +44,7 @@
 2. 실시간 밴픽 추천
 - 밴픽창 화면 인식을 통해 유저에게 가장 적합한 챔피언을 추천해드립니다
 <p align = "center">
-<img src = "https://github.com/boostcampaitech5/level3_recsys_finalproject-recsys-05/assets/46915260/571ec96a-faa8-4347-a94c-31fb118eb2fb">
+<img src = "./assets/champion_rec.gif" width="700" height="350">
 </p>
 
 
@@ -49,7 +52,7 @@
 3. 아이템 추천
 - 유저, 상대방의 챔피언 및 포지션에 가장 적합한 아이템을 추천해드립니다
 <p align = "center">
-<img src = "https://github.com/boostcampaitech5/level3_recsys_finalproject-recsys-05/assets/46915260/6f8406c3-cb79-49ad-9d27-692d0989b574">
+<img src = "./assets/item_rec.gif" width="700" height="350">
 </p>
 
 
@@ -65,7 +68,7 @@
 
 2. 챔피언 추천 모델
 <p align = "center">
- <img src="https://github.com/boostcampaitech5/level3_recsys_finalproject-recsys-05/assets/46915260/f8c024ed-79df-46c5-b2b2-009068fe8984">
+ <img src="./assets/LOL project.png" width="600" height="500">
 </p>
 
 - 밴픽은 플레이어들이 순차적으로 챔피언을 선택하는 과정으로, 챔피언을 추천하기 위해선 이전 플레이어가 선택한 챔피언이 다음 플레이어의 선택에 영향을 준다는 점과 선택된 챔피언들 간의 관계를 모두 고려해야합니다. 
@@ -91,36 +94,36 @@
 
 <table>
   <tr height="125px">
-    <td align="center" width="120px">
+    <td align="center" width="180px">
       <a href="https://github.com/ebbbi"><img src="https://avatars.githubusercontent.com/ebbbi"/></a>
     </td>
-    <td align="center" width="120px">
+    <td align="center" width="180px">
       <a href="https://github.com/Risk-boy"><img src="https://avatars.githubusercontent.com/Risk-boy"/></a>
     </td>
-    <td align="center" width="120px">
+    <td align="center" width="180px">
       <a href="https://github.com/Puer-Hyun"><img src="https://avatars.githubusercontent.com/Puer-Hyun"/></a>
     </td>
-    <td align="center" width="120px">
+    <td align="center" width="180px">
       <a href="https://github.com/seoseoi"><img src="https://avatars.githubusercontent.com/seoseoi"/></a>
     </td>
-    <td align="center" width="120px">
+    <td align="center" width="180px">
       <a href="https://github.com/Aiden-Jung"><img src="https://avatars.githubusercontent.com/Aiden-Jung"/></a>
 
   </tr>
   <tr height="70px">
-    <td align="center" width="120px">
+    <td align="center" width="180px">
       <a href="https://github.com/ebbbi">강은비</a>
     </td>
-    <td align="center" width="120px">
+    <td align="center" width="180px">
       <a href="https://github.com/Risk-boy">김철현</a>
     </td>
-    <td align="center" width="120px">
+    <td align="center" width="180px">
       <a href="https://github.com/Puer-Hyun">박성현</a>
     </td>
-    <td align="center" width="120px">
+    <td align="center" width="180px">
       <a href="https://github.com/seoseoi">임서연</a>
     </td>
-    <td align="center" width="120px">
+    <td align="center" width="180px">
       <a href="https://github.com/Aiden-Jung">정현석</a>
     </td>
   </tr>
