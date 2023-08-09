@@ -104,7 +104,7 @@
       <a href="https://github.com/Puer-Hyun"><img src="https://avatars.githubusercontent.com/Puer-Hyun"/></a>
     </td>
     <td align="center" width="180px">
-      <a href="https://github.com/seoseoi"><img src="https://avatars.githubusercontent.com/seoseoi"/></a>
+      <a href="https://github.com/serulean"><img src="https://avatars.githubusercontent.com/serulean"/></a>
     </td>
     <td align="center" width="180px">
       <a href="https://github.com/Aiden-Jung"><img src="https://avatars.githubusercontent.com/Aiden-Jung"/></a>
@@ -121,7 +121,7 @@
       <a href="https://github.com/Puer-Hyun">박성현</a>
     </td>
     <td align="center" width="180px">
-      <a href="https://github.com/seoseoi">임서연</a>
+      <a href="https://github.com/serulean">임서연</a>
     </td>
     <td align="center" width="180px">
       <a href="https://github.com/Aiden-Jung">정현석</a>
