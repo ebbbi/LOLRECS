@@ -19,17 +19,27 @@ async def get_summoner_name(summoner: str, region: str) -> Dict[str, Any]:
         print(f"Error: {e}")
 
 
+def mastery_scaler(mastery):
+    values = list(mastery.values())
+    min_value = min(values)
+    max_value = max(values)
+    
+    if min_value == max_value:
+        return {k:0.5 for k in mastery} 
+    else:
+        return {k:max(0.001, ((v - min_value)/(max_value - min_value))*0.5) for k, v in mastery.items()} 
+
+    
 async def get_masteries(id: str, region: str) -> Dict[str, Any]:
     try:
         async with aiohttp.ClientSession() as client:
             r = await client.get(f"https://{region}.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/{id}?api_key={api}", ssl=ssl.SSLContext())
             r = await r.json(loads=ujson.loads)
             result = {hist["championId"]:hist["championPoints"] for hist in r}
-            return result
+            return mastery_scaler(result)
     except Exception:
         print('Masteries not found')
         return {}
-
 
 async def get_rank(id: str, region: str) -> Dict[str, Any]:
     try:

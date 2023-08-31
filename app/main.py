@@ -115,19 +115,22 @@ async def get_recognize(request: Request):
         }
 
 
+@app.get("/banpicks/{summoner}")
+async def get_mastery(summoner: str):
+    summoner_res = await get_summoner_name(summoner, 'kr')
+    if summoner_res["id"]:
+        masteries = await get_masteries(summoner_res["id"], 'kr')
+        return {"mastery" : masteries}
+    else:
+        raise HTTPException(status_code=404, detail="Summoner not found")
+
 # 챔피언 추천
 @app.post("/get-pick-data")
 async def send_data(data: Request):
     data = await data.json()
-    summoner = data["username"]
-    summoner_res = await get_summoner_name(summoner, 'kr')
-    if summoner_res["id"]:
-        masteries = await get_masteries(summoner_res["id"], 'kr')
-        results = inference(data["allies"], data["enemies"], data['bans'], masteries)
-        print(results)
-        return {"results" : results}
-    else:
-       raise HTTPException(status_code=404, detail="Summoner not found")
+    results = inference(data["allies"], data["enemies"], data['bans'], data["mastery"])
+    print(results)
+    return {"results" : results}
 
 # 아이템 추천
 @app.post("/get-item-data")
