@@ -9,7 +9,7 @@ import ChampReader from "./ChampReader";
 
 import React, { useState } from "react";
 
-function ChampRec({ champData, champMap, username }) {
+function ChampRec({ champData, champMap, mastery }) {
   const bans = Array.from({ length: 10 }, () => useState(null));
   const allies = Array.from({ length: 5 }, () => useState(null));
   const enemies = Array.from({ length: 5 }, () => useState(null));
@@ -30,7 +30,7 @@ function ChampRec({ champData, champMap, username }) {
       </div>
       <div className={styles.section}>
         <ChampionPick
-          username={username}
+          mastery={mastery}
           bans={bans}
           allies={allies}
           enemies={enemies}

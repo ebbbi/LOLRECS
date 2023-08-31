@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import styles from "./championpick.module.css";
 import Choosechamp from "@/components/banpick/ChooseChamp";
 
-function ChampionPick({ username, bans, allies, enemies, champMap }) {
+function ChampionPick({ mastery, bans, allies, enemies, champMap }) {
   const [recResult, setrecresult] = useState([]);
 
   const Submitchampdata = () => {
@@ -14,7 +14,7 @@ function ChampionPick({ username, bans, allies, enemies, champMap }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        username: username,
+        mastery: mastery,
         bans: bans.map((banState) => banState[0]),
         allies: allies.map((allyState) => allyState[0]),
         enemies: enemies.map((enemyState) => enemyState[0]),

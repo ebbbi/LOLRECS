@@ -42,8 +42,27 @@ async function getChampData() {
   ];
 }
 
+async function getMastery(summoner) {
+  const userMasteryFetch = await fetch(
+    `https://www.lolrecs.com/api/banpicks/${summoner}`, 
+    {
+      cache: "no-store",
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (!userMasteryFetch.ok) {
+      throw new Error("Network response was not ok");
+    }
+
+    const userMstery = await userMasteryFetch.json();
+    return userMstery.mastery      
+};
+
 export default async function Page({ params }) {
   const [champData, champMap] = await getChampData();
+  const mastery = await getMastery(params.id)
 
   return (
     <main className={`${styles.main}`}>
@@ -63,7 +82,7 @@ export default async function Page({ params }) {
         </div>
 
         <div className={styles.body}>
-          <ChampRec  champData={champData} champMap={champMap} username={params.id}/>
+          <ChampRec  champData={champData} champMap={champMap} mastery={mastery}/>
         </div>
       </div>
     </main>
